@@ -1,0 +1,11 @@
+<h1>Top#index</h1>
+<p>Find me in app/views/top/index.html.erb</p>
+
+<%= form_for :password_options do |f| %>
+  <%= f.check_box :include_sharp %><%= label_tag 'password_options_include_sharp_1', '「#」を含む' %><br />
+  <%= f.submit '作成' %>
+<%- end -%>
+
+<%= form_for :password_result do |f| %>
+  <%= f.text_field :password %>
+<%- end -%>
