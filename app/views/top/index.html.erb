@@ -1,6 +1,7 @@
 <h1>パスワードジェネレータ</h1>
 
 <%= form_for :password_options do |f| %>
+  <%= f.select :password_size, options_for_select((4..30).collect{|n| [n.to_s, n.to_s]}, @password_options.password_size) %><br />
   <%= f.check_box :include_sharp %><%= label_tag 'password_options_include_sharp_1', '「#」を含む' %><br />
   <%= f.submit '作成' %>
 <%- end -%>
