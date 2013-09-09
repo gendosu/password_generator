@@ -37,12 +37,14 @@ group :development, :test do
   gem 'rspec-rails',        '2.14.0'
   gem 'factory_girl_rails', '4.2.1'
   gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
   
   # このgemをインストールするには
   # Ubuntuの場合
   # sudo apt-get install libqtwebkit-dev
   # が必要
   gem 'capybara-webkit'
+  gem 'headless'
 end
 
 # Use ActiveModel has_secure_password
